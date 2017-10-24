@@ -30,7 +30,7 @@ test:
 about:
   home: https://github.com/esnme/ultrajson
   summary: "Ultra fast JSON decoder and encoder written in C with Python bindings"
-  license: BSD
+  license: BSD 3-Clause
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE.txt'
 
 extra:
