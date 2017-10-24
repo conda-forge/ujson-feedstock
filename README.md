@@ -3,7 +3,7 @@ About ujson
 
 Home: https://github.com/esnme/ultrajson
 
-Package license: BSD
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
