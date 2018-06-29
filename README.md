@@ -14,14 +14,16 @@ Summary: Ultra fast JSON decoder and encoder written in C with Python bindings
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ujson-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ujson-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ujson-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ujson-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ujson-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ujson-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/ujson-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/ujson-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/ujson-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/ujson-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/ujson-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/ujson-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ujson/badges/version.svg)](https://anaconda.org/conda-forge/ujson)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ujson/badges/downloads.svg)](https://anaconda.org/conda-forge/ujson)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ujson-green.svg)](https://anaconda.org/conda-forge/ujson) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ujson.svg)](https://anaconda.org/conda-forge/ujson) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ujson.svg)](https://anaconda.org/conda-forge/ujson) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ujson.svg)](https://anaconda.org/conda-forge/ujson) |
 
 Installing ujson
 ================
