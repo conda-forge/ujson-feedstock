@@ -23,6 +23,7 @@ requirements:
     - python
     - pip
     - setuptools_scm
+    - msinttypes  # [win and py27]
   run:
     - python
 
