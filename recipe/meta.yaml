@@ -1,19 +1,19 @@
 {% set name = "ujson" %}
-{% set version = "2.0.2" %}
-{% set sha256 = "91f30f0b6fd5cd4b43844a9c52febc80772aad6348a58369d0a08bd1b347a52c" %}
+{% set version = "1.35" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: f66073e5506e91d204ab0c614a148d5aa938bdbf104751be66f8ad7a222f5f86
+  - url: https://raw.githubusercontent.com/ultrajson/ultrajson/v{{ version }}/LICENSE.txt
+    sha256: 3d0bf08e9f269f093baea3c6ab1a44b05d531197493942414114e969cd67b594
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1002
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
