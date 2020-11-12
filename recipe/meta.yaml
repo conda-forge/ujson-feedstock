@@ -12,7 +12,7 @@ source:
     sha256: 3d0bf08e9f269f093baea3c6ab1a44b05d531197493942414114e969cd67b594
 
 build:
-  number: 1002
+  number: 1003
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/ultrajson/ultrajson
   summary: Ultra fast JSON decoder and encoder written in C with Python bindings
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
 
   dev_url: https://github.com/ultrajson/ultrajson
