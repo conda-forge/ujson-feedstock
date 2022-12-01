@@ -1,6 +1,6 @@
 {% set name = "ujson" %}
-{% set version = "5.5.0" %}
-{% set sha256 = "b25077a971c7da47bd6846a912a747f6963776d90720c88603b1b55d81790780" %}
+{% set version = "5.6.0" %}
+{% set sha256 = "f881e2d8a022e9285aa2eab6ba8674358dbcb2b57fa68618d88d62937ac3ff04" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
 
