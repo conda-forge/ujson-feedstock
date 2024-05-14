@@ -1,6 +1,6 @@
 {% set name = "ujson" %}
-{% set version = "5.9.0" %}
-{% set sha256 = "89cc92e73d5501b8a7f48575eeb14ad27156ad092c2e9fc7e3cf949f07e75532" %}
+{% set version = "5.10.0" %}
+{% set sha256 = "b3cd8f3c5d8c7738257f1018880444f7b7d9b66232c64649f562d7ba86ad4bc1" %}
 
 package:
   name: {{ name|lower }}
@@ -21,6 +21,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
