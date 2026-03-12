@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: ujson
-  version: 5.11.0
-  sha256: e204ae6f909f099ba6b6b942131cee359ddda2b6e4ea39c12eb8b991fe2010e0
+  version: "5.12.0"
+  sha256: 14b2e1eb528d77bc0f4c5bd1a7ebc05e02b5b41beefb7e8567c9675b8b13bcf4
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: e204ae6f909f099ba6b6b942131cee359ddda2b6e4ea39c12eb8b991fe2010e0
+  sha256: 14b2e1eb528d77bc0f4c5bd1a7ebc05e02b5b41beefb7e8567c9675b8b13bcf4
 
 build:
-  number: 1
+  number: 0
   skip: match(python, "<3.7")
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
 
