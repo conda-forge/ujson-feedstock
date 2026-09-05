@@ -1,20 +1,18 @@
 schema_version: 1
 
 context:
-  name: ujson
-  version: "5.13.0"
-  sha256: d62e3d7625384c08082abad81a077af587fdef2761bb14c3822f4234b8d07d75
+  version: "6.0.0"
 
 package:
-  name: ${{ name|lower }}
+  name: ujson
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: d62e3d7625384c08082abad81a077af587fdef2761bb14c3822f4234b8d07d75
+  url: https://pypi.org/packages/source/u/ujson/ujson-${{ version }}.tar.gz
+  sha256: 80e23393feb707582e0ad495c397a4477b646d08094d2df64f7316f9fafd8aae
 
 build:
-  number: 2
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
 
 requirements:
@@ -29,8 +27,8 @@ requirements:
   host:
     - python
     - pip
-    - setuptools >=77
-    - setuptools_scm >=3.4
+    - setuptools >=80
+    - setuptools_scm >=9.2
   run:
     - python
 
