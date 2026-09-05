@@ -1,16 +1,14 @@
 schema_version: 1
 
 context:
-  name: ujson
   version: "6.0.0"
-  sha256: 80e23393feb707582e0ad495c397a4477b646d08094d2df64f7316f9fafd8aae
 
 package:
-  name: ${{ name|lower }}
+  name: ujson
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/u/ujson/ujson-${{ version }}.tar.gz
   sha256: 80e23393feb707582e0ad495c397a4477b646d08094d2df64f7316f9fafd8aae
 
 build:
@@ -29,8 +27,8 @@ requirements:
   host:
     - python
     - pip
-    - setuptools >=77
-    - setuptools_scm >=3.4
+    - setuptools >=80
+    - setuptools_scm >=9.2
   run:
     - python
 
